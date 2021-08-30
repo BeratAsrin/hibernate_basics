@@ -34,7 +34,7 @@ public class Reading {
         }
         System.out.println("-----------------------------------------------------");
 
-        users = session.createQuery("from User s where s.id = '1'").list();
+        users = session.createQuery("from User s where s.id=1 OR s.email LIKE '%---%'").list();
 
         System.out.println("-----------------------------------------------------");
         for (User temp: users) {
