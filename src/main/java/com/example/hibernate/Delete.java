@@ -9,7 +9,7 @@ public class Delete {
         SessionFactory factory = new Configuration().configure().addAnnotatedClass(User.class).buildSessionFactory();
         Session session = factory.getCurrentSession();
         session.beginTransaction();
-        session.createQuery("delete from User where id = 2").executeUpdate();
+        session.createQuery("delete from User where id = 1").executeUpdate();
         session.getTransaction().commit();
         factory.close();
 

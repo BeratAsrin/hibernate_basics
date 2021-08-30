@@ -14,7 +14,7 @@ public class Reading {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
 
-        User user = session.get(User.class,2); // Here second parameter is primary key id.
+        User user = session.get(User.class,1); // Here second parameter is primary key id.
 
         System.out.println(user.toString());
 

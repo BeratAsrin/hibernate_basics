@@ -11,7 +11,7 @@ public class Update {
         session.beginTransaction();
 
         User user = session.get(User.class, 1);
-        user.setName("Berat Asrın");
+        user.setName("Unknown");
 
         session.getTransaction().commit();
         factory.close();
