@@ -1,8 +1,15 @@
 package com.example.hibernate;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class User {
 
@@ -19,7 +26,7 @@ public class User {
 
     @Column(name = "email")
     private String email;
-
+/*
     public int getId() {
         return id;
     }
@@ -55,14 +62,7 @@ public class User {
     public User(){
 
     }
-
-    public User(String name, String lastName, String email) {
-        this.name = name;
-        this.lastName = lastName;
-        this.email = email;
-    }
-
-    @Override
+      @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
@@ -71,5 +71,13 @@ public class User {
                 ", email='" + email + '\'' +
                 '}';
     }
+*/
+    public User(String name, String lastName, String email) {
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+
 
 }
