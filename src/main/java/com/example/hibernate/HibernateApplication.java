@@ -10,7 +10,9 @@ public class HibernateApplication {
 		//SpringApplication.run(HibernateApplication.class, args);
 		//CreateAndSave.createAndSave();
 		//Reading.readById();
-		Reading.readAll();
+		//Reading.readAll();
+		Update.update();
+		Update.updateAllMails();
 	}
 
 }
