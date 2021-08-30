@@ -11,8 +11,9 @@ public class HibernateApplication {
 		//CreateAndSave.createAndSave();
 		//Reading.readById();
 		//Reading.readAll();
-		Update.update();
-		Update.updateAllMails();
+		//Update.update();
+		//Update.updateAllMails();
+		//Delete.deleteById();
 	}
 
 }
